@@ -1,0 +1,228 @@
+(footprint "SWR_Bridge_V1.4"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Kits And Parts (W8DIZ) SWR Bridge v1.4 module and clones (414077A), 1.85x1.2in (47.0x30.5mm) PCB, M3 holes on 1.600x0.950in centres. Pad positions taken from the kitsandparts.com v1.4 layout; verify against your module before fabrication.")
+	(tags "SWR bridge directional coupler module W8DIZ")
+	(property "Reference" "U**"
+		(at 0 -17.145 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SWR_Bridge_V1.4"
+		(at 0 17.145 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://kitsandparts.com/bridge1.4.php"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SWR bridge module v1.4, 3.5-30 MHz"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -23.495 -15.24)
+		(end 23.495 15.24)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+	)
+	(fp_rect
+		(start -23.605 -15.35)
+		(end 23.605 15.35)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+	)
+	(fp_rect
+		(start -23.75 -15.5)
+		(end 23.75 15.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_text user "RF Out"
+		(at -14.605 -6.35 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "RF In"
+		(at -14.605 6.35 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "Fwd"
+		(at 16.51 -2.54 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "Rev"
+		(at 16.51 2.54 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -14.605 9.525)
+		(size 2.2 2.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(pinfunction "RF_IN")
+		(pintype "passive")
+	)
+	(pad "2" thru_hole circle
+		(at -14.605 -9.525)
+		(size 2.2 2.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(pinfunction "RF_OUT")
+		(pintype "passive")
+	)
+	(pad "3" thru_hole circle
+		(at 20.32 -2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(pinfunction "FWD")
+		(pintype "output")
+	)
+	(pad "4" thru_hole circle
+		(at 20.32 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(pinfunction "GND")
+		(pintype "passive")
+	)
+	(pad "5" thru_hole rect
+		(at 20.32 2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(pinfunction "REV")
+		(pintype "output")
+	)
+	(pad "4" thru_hole circle
+		(at -19.685 -6.35)
+		(size 2.2 2.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(pinfunction "GND")
+		(pintype "passive")
+	)
+	(pad "4" thru_hole circle
+		(at -19.685 6.35)
+		(size 2.2 2.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(pinfunction "GND")
+		(pintype "passive")
+	)
+	(pad "4" thru_hole circle
+		(at -10.16 -12.065)
+		(size 2.2 2.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(pinfunction "GND")
+		(pintype "passive")
+	)
+	(pad "4" thru_hole circle
+		(at -10.16 12.065)
+		(size 2.2 2.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(pinfunction "GND")
+		(pintype "passive")
+	)
+	(pad "" np_thru_hole circle
+		(at -20.32 -12.065)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "" np_thru_hole circle
+		(at 20.32 -12.065)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "" np_thru_hole circle
+		(at -20.32 12.065)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "" np_thru_hole circle
+		(at 20.32 12.065)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+	)
+	(embedded_fonts no)
+)
